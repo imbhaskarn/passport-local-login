@@ -1,0 +1,33 @@
+<% if( typeof(name) != "undefined") {%>
+  <div class="fade show text-center text-light">
+    Weclome <%= name %> 
+  </div>
+  <% } %>
+
+ 
+
+<% if( typeof(notValid) != "undefined") { %>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <span class="text-center w-100"> <%= notValid %> </span>
+    <button type="button" class="btn-close border-0"  aria-label="Close"></button>
+  </div>
+  <% } %>
+    <% if( typeof(_msg) != "undefined") { %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <span class="text-center w-100"> Weclome User <%= _msg %> </span>
+          <button type="button" class="btn-close border-0" aria-label="Close"></button>
+        </div>
+    <% } %> 
+    <% if( typeof(message) != "undefined") { %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <span class="text-center w-100"> Weclome User <%= message %> </span>
+          <button type="button" class="btn-close border-0" aria-label="Close"></button>
+        </div>
+    <% } %> 
+
+<% if(typeof(msg) != "undefined") { %>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <span class="text-center w-100"> <%= msg %> </span>
+    <button type="button" class="btn-close border-0" aria-label="Close"></button>
+  </div>
+  <% } %> 
